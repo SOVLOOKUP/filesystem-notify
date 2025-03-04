@@ -1,0 +1,21 @@
+{
+  "name": "notify-ts-linux-riscv64-gnu",
+  "version": "0.0.0",
+  "os": [
+    "linux"
+  ],
+  "cpu": [
+    "riscv64"
+  ],
+  "main": "notify-ts.linux-riscv64-gnu.node",
+  "files": [
+    "notify-ts.linux-riscv64-gnu.node"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">= 10"
+  },
+  "libc": [
+    "glibc"
+  ]
+}

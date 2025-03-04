@@ -1,0 +1,21 @@
+{
+  "name": "notify-ts-linux-x64-musl",
+  "version": "0.0.0",
+  "os": [
+    "linux"
+  ],
+  "cpu": [
+    "x64"
+  ],
+  "main": "notify-ts.linux-x64-musl.node",
+  "files": [
+    "notify-ts.linux-x64-musl.node"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">= 10"
+  },
+  "libc": [
+    "musl"
+  ]
+}
