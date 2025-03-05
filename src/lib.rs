@@ -27,12 +27,12 @@ impl DirectoryWatcher {
   // 创建新的监听器实例
   #[napi]
   pub fn new(callback: JsFunction) -> Self {
-    let (tx, mut rx) = channel(1);
+    let (tx, mut rx) = channel(32);
 
     // 创建线程安全的回调函数
     let tsfn: ThreadsafeFunction<String, ErrorStrategy::CalleeHandled> = callback
       .create_threadsafe_function(
-        0,
+        32,
         |ctx: napi::threadsafe_function::ThreadSafeCallContext<String>| {
           ctx.env.create_string(&ctx.value).map(|v| vec![v])
         },

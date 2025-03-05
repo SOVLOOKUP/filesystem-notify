@@ -1,10 +1,10 @@
 import { DirectoryWatcher } from ".";
 
 const d = DirectoryWatcher.new((_, event) => {
-  console.log(111, JSON.parse(event));
+  console.log(JSON.parse(event));
 });
 
-d.watch("C:\\Users\\SOVLOOKUP\\Desktop\\notify-ts");
+d.watch("C:\\");
 
 setInterval(() => {
   d.getWatchedPaths();
