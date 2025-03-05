@@ -15,7 +15,6 @@
         "armv7-unknown-linux-gnueabihf",
         "armv7-unknown-linux-musleabihf",
         "x86_64-unknown-linux-musl",
-        "x86_64-unknown-freebsd",
         "i686-pc-windows-msvc",
         "armv7-linux-androideabi",
         "universal-apple-darwin",
@@ -27,13 +26,11 @@
   "devDependencies": {
     "@napi-rs/cli": "^2.18.4"
   },
-  "engines": {
-    "node": ">= 10"
-  },
   "scripts": {
     "artifacts": "napi artifacts",
     "build": "napi build --platform --release",
     "build:debug": "napi build --platform",
+    "test": "",
     "prepublishOnly": "napi prepublish -t npm",
     "universal": "napi universal",
     "version": "napi version"
