@@ -30,7 +30,7 @@
     "artifacts": "napi artifacts",
     "build": "napi build --platform --release",
     "build:debug": "napi build --platform",
-    "test": "",
+    "test": "ls",
     "prepublishOnly": "napi prepublish -t npm",
     "universal": "napi universal",
     "version": "napi version"
