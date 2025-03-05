@@ -435,11 +435,15 @@ jobs:
         with:
           tag_name: v${{ steps.package-version.outputs.current-version }}
           name: Release v${{ steps.package-version.outputs.current-version }}
-
+          
+      - name: Set publishing config
+        if: steps.check_version.outputs.has_update == 'true'
+        run: npm config set '//registry.npmjs.org/:_authToken' "${NODE_AUTH_TOKEN}"
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
+          
       - name: Publish
         if: steps.check_version.outputs.has_update == 'true'
         run: |
           npm publish --access public --no-git-checks
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+        
