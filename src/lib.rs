@@ -25,7 +25,7 @@ pub struct DirectoryWatcher {
 #[napi]
 impl DirectoryWatcher {
   // 创建新的监听器实例
-  #[napi]
+  #[napi(ts_args_type = "callback: (err: null | Error, result: string) => void | Promise<void>")]
   pub fn new(callback: JsFunction) -> Self {
     let (tx, mut rx) = channel(32);
 
