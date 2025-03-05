@@ -7,5 +7,5 @@ const d = DirectoryWatcher.new((_, event) => {
 d.watch("C:\\");
 
 setInterval(() => {
-  d.getWatchedPaths();
+  console.log(d.getWatchedPaths());
 }, 1000);
