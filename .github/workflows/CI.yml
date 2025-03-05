@@ -446,6 +446,4 @@ jobs:
         if: steps.check_version.outputs.has_update == 'true'
         run: |
           npm publish --access public --no-git-checks
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+        
