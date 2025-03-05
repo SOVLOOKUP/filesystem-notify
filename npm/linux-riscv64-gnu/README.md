@@ -1,3 +1,3 @@
-# `notify-ts-linux-riscv64-gnu`
+# `filesystem-notify-linux-riscv64-gnu`
 
-This is the **riscv64gc-unknown-linux-gnu** binary for `notify-ts`
+This is the **riscv64gc-unknown-linux-gnu** binary for `filesystem-notify`

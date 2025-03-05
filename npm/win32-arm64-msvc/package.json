@@ -1,5 +1,5 @@
 {
-  "name": "notify-ts-win32-arm64-msvc",
+  "name": "filesystem-notify-win32-arm64-msvc",
   "version": "0.0.0",
   "os": [
     "win32"
@@ -7,9 +7,9 @@
   "cpu": [
     "arm64"
   ],
-  "main": "notify-ts.win32-arm64-msvc.node",
+  "main": "filesystem-notify.win32-arm64-msvc.node",
   "files": [
-    "notify-ts.win32-arm64-msvc.node"
+    "filesystem-notify.win32-arm64-msvc.node"
   ],
   "license": "MIT",
   "engines": {

@@ -1,5 +1,5 @@
 {
-  "name": "notify-ts-win32-ia32-msvc",
+  "name": "filesystem-notify-win32-ia32-msvc",
   "version": "0.0.0",
   "os": [
     "win32"
@@ -7,9 +7,9 @@
   "cpu": [
     "ia32"
   ],
-  "main": "notify-ts.win32-ia32-msvc.node",
+  "main": "filesystem-notify.win32-ia32-msvc.node",
   "files": [
-    "notify-ts.win32-ia32-msvc.node"
+    "filesystem-notify.win32-ia32-msvc.node"
   ],
   "license": "MIT",
   "engines": {

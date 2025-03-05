@@ -1,3 +1,3 @@
-# `notify-ts-linux-arm-musleabihf`
+# `filesystem-notify-linux-arm-musleabihf`
 
-This is the **armv7-unknown-linux-musleabihf** binary for `notify-ts`
+This is the **armv7-unknown-linux-musleabihf** binary for `filesystem-notify`

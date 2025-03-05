@@ -1,6 +1,6 @@
 [package]
 edition = "2021"
-name = "notify-ts"
+name = "filesystem-notify"
 version = "0.0.0"
 
 [lib]

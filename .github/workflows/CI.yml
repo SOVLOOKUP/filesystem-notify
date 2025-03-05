@@ -1,7 +1,7 @@
 name: CI
 env:
   DEBUG: napi:*
-  APP_NAME: notify-ts
+  APP_NAME: filesystem-notify
   MACOSX_DEPLOYMENT_TARGET: "10.13"
 permissions:
   contents: write
@@ -416,8 +416,8 @@ jobs:
         id: package-version
         uses: martinbeentjes/npm-get-version-action@v1.3.1
 
-      - name: Get latest version of notify-ts
-        run: echo "LATEST_VERSION=$(npm view notify-ts version)" >> $GITHUB_ENV
+      - name: Get latest version of filesystem-notify
+        run: echo "LATEST_VERSION=$(npm view filesystem-notify version)" >> $GITHUB_ENV
 
       - name: Check version and set output
         id: check_version

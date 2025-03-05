@@ -1,5 +1,5 @@
 {
-  "name": "notify-ts-darwin-arm64",
+  "name": "filesystem-notify-darwin-arm64",
   "version": "0.0.0",
   "os": [
     "darwin"
@@ -7,9 +7,9 @@
   "cpu": [
     "arm64"
   ],
-  "main": "notify-ts.darwin-arm64.node",
+  "main": "filesystem-notify.darwin-arm64.node",
   "files": [
-    "notify-ts.darwin-arm64.node"
+    "filesystem-notify.darwin-arm64.node"
   ],
   "license": "MIT",
   "engines": {

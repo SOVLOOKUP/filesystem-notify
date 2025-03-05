@@ -2,7 +2,7 @@
   "lockfileVersion": 1,
   "workspaces": {
     "": {
-      "name": "notify-ts",
+      "name": "filesystem-notify",
       "devDependencies": {
         "@napi-rs/cli": "^2.18.4",
       },

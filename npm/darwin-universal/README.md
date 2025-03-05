@@ -1,3 +1,3 @@
-# `notify-ts-darwin-universal`
+# `filesystem-notify-darwin-universal`
 
-This is the **universal-apple-darwin** binary for `notify-ts`
+This is the **universal-apple-darwin** binary for `filesystem-notify`

@@ -1,3 +1,3 @@
-# `notify-ts-linux-x64-gnu`
+# `filesystem-notify-linux-x64-gnu`
 
-This is the **x86_64-unknown-linux-gnu** binary for `notify-ts`
+This is the **x86_64-unknown-linux-gnu** binary for `filesystem-notify`

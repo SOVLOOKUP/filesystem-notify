@@ -1,3 +1,3 @@
-# `notify-ts-linux-arm-gnueabihf`
+# `filesystem-notify-linux-arm-gnueabihf`
 
-This is the **armv7-unknown-linux-gnueabihf** binary for `notify-ts`
+This is the **armv7-unknown-linux-gnueabihf** binary for `filesystem-notify`

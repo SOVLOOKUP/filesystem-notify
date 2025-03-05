@@ -1,5 +1,5 @@
 {
-  "name": "notify-ts-linux-arm-gnueabihf",
+  "name": "filesystem-notify-linux-arm-gnueabihf",
   "version": "0.0.0",
   "os": [
     "linux"
@@ -7,9 +7,9 @@
   "cpu": [
     "arm"
   ],
-  "main": "notify-ts.linux-arm-gnueabihf.node",
+  "main": "filesystem-notify.linux-arm-gnueabihf.node",
   "files": [
-    "notify-ts.linux-arm-gnueabihf.node"
+    "filesystem-notify.linux-arm-gnueabihf.node"
   ],
   "license": "MIT",
   "engines": {

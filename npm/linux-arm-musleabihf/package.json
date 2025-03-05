@@ -1,5 +1,5 @@
 {
-  "name": "notify-ts-linux-arm-musleabihf",
+  "name": "filesystem-notify-linux-arm-musleabihf",
   "version": "0.0.0",
   "os": [
     "linux"
@@ -7,9 +7,9 @@
   "cpu": [
     "arm"
   ],
-  "main": "notify-ts.linux-arm-musleabihf.node",
+  "main": "filesystem-notify.linux-arm-musleabihf.node",
   "files": [
-    "notify-ts.linux-arm-musleabihf.node"
+    "filesystem-notify.linux-arm-musleabihf.node"
   ],
   "license": "MIT",
   "engines": {

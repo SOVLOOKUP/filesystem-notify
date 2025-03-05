@@ -1,5 +1,5 @@
 {
-  "name": "notify-ts-android-arm-eabi",
+  "name": "filesystem-notify-android-arm-eabi",
   "version": "0.0.0",
   "os": [
     "android"
@@ -7,9 +7,9 @@
   "cpu": [
     "arm"
   ],
-  "main": "notify-ts.android-arm-eabi.node",
+  "main": "filesystem-notify.android-arm-eabi.node",
   "files": [
-    "notify-ts.android-arm-eabi.node"
+    "filesystem-notify.android-arm-eabi.node"
   ],
   "license": "MIT",
   "engines": {

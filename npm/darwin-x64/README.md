@@ -1,3 +1,3 @@
-# `notify-ts-darwin-x64`
+# `filesystem-notify-darwin-x64`
 
-This is the **x86_64-apple-darwin** binary for `notify-ts`
+This is the **x86_64-apple-darwin** binary for `filesystem-notify`

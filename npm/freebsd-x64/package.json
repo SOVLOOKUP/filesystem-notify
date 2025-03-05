@@ -1,5 +1,5 @@
 {
-  "name": "notify-ts-freebsd-x64",
+  "name": "filesystem-notify-freebsd-x64",
   "version": "0.0.0",
   "os": [
     "freebsd"
@@ -7,9 +7,9 @@
   "cpu": [
     "x64"
   ],
-  "main": "notify-ts.freebsd-x64.node",
+  "main": "filesystem-notify.freebsd-x64.node",
   "files": [
-    "notify-ts.freebsd-x64.node"
+    "filesystem-notify.freebsd-x64.node"
   ],
   "license": "MIT",
   "engines": {
