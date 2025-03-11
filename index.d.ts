@@ -6,6 +6,6 @@
 export declare class DirectoryWatcher {
   static new(callback: (...args: any[]) => any): DirectoryWatcher
   watch(path: string): void
-  unwatch(path: string): void
+  unwatch(path: string): boolean
   getWatchedPaths(): Array<string>
 }

@@ -5,7 +5,7 @@ use napi::{
 use napi_derive::napi;
 use notify::{Config, Event, RecommendedWatcher, RecursiveMode, Watcher};
 use serde::Serialize;
-use std::{path::Path, thread::spawn};
+use std::{fmt::Debug, path::Path, thread::spawn};
 use tokio::sync::mpsc::channel;
 
 // 定义文件系统事件结构
@@ -71,20 +71,26 @@ impl DirectoryWatcher {
   // 开始监听指定目录
   #[napi]
   pub fn watch(&mut self, path: String) -> napi::Result<()> {
-    self
+    if let Err(a) = self
       .watcher
       .watch(Path::new(path.as_str()), RecursiveMode::Recursive)
-      .unwrap();
+    {
+      return Err(napi::Error::from_reason(a.to_string()));
+    };
+
     self.paths.insert(path.to_string());
     Ok(())
   }
 
   // 取消监听指定目录
   #[napi]
-  pub fn unwatch(&mut self, path: String) -> napi::Result<()> {
-    self.watcher.unwatch(Path::new(path.as_str())).unwrap();
-    self.paths.remove(path.as_str());
-    Ok(())
+  pub fn unwatch(&mut self, path: String) -> napi::Result<bool> {
+    if let Err(a) = self.watcher.unwatch(Path::new(path.as_str())) {
+      return Err(napi::Error::from_reason(a.to_string()));
+    };
+
+    let ok = self.paths.remove(path.as_str());
+    Ok(ok)
   }
 
   // 获取当前所有被监听的目录
